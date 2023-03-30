@@ -1,0 +1,18 @@
+{
+  "name": "com.iamtakuu.spookyloader",
+  "version": "0.1.0",
+  "displayName": "Spooky Loader",
+  "description": "A simple asynchronous scene loader for multi-scene workflows.",
+  "unity": "2019.1",
+  "documentationUrl": "https://example.com/",
+  "keywords": [
+    "unity",
+    "scene-loader"
+  ],
+  "author": {
+    "name": "Taku",
+    "email": "takuatwork@outlook.com",
+    "url": "https://github.com/iamTakuu"
+  },
+  "type": "tool"
+}
