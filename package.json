@@ -4,7 +4,7 @@
   "displayName": "Spooky Loader",
   "description": "A simple asynchronous scene loader for multi-scene workflows.",
   "unity": "2019.1",
-  "documentationUrl": "https://github.com/iamTakuu/Spooky-Loader/README.md",
+  "documentationUrl": "https://github.com/iamTakuu/Spooky-Loader/blob/main/README.md",
   "keywords": [
     "unity",
     "scene-loader"
