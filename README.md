@@ -35,13 +35,20 @@ https://github.com/iamTakuu/Spooky-Loader.git
  
   The idea setup has a "Base" scene that holds persistent entities throughout the scene.
   
-  Gameobjects that are named after the scene. These will hold the **SpookySceneLoader.cs** Component
+  You'll need Gameobjects named after the scenes you want to load in and out. These will hold the **SpookySceneLoader** Component
   
   **NOTE**: It's **key** that the gameobject is named after the scene AND the scenes are added to the Build Order.
   
-  Set up your level as need be, breaking it up into smaller, more appropriate scenes then proceed.
+  Set up your level as need be, breaking it up into smaller, more appropriate scenes.
   
   
   ## SpookySceneLoader.cs
-  ## SpookyTrigger.cs
-  ## Trigger Prefab
+  <img align="left" src="https://user-images.githubusercontent.com/88771608/233089631-c6af6208-f474-4175-8a53-175203b779eb.png" width="300">
+  
+  The **SpookySceneLoader** component is attached to the empty Gameobject created earlier, all it needs from you is the scene's current status and a       **Trigger Prefab** (which is of type **SpookyTrigger**). Tick _isLoaded_ when the scene you start with is already present, otherwise leave it as false.
+  The _Add Trigger_ button creates a new instance of the trigger prefab as a child of the Gameobject with the Loader. A scene can have multiple triggers, in the event that there are multiple entrances to the level.
+
+  ## SpookyTrigger.cs and Trigger Prefab
+  
+  You can make your own custom _Trigger Prefab_ if need be, you just need to create a prefab that has a box collider (set to isTrigger) and give it the component _SpookyTrigger_. Add this prefab to the loader, and the _Add Trigger_ button will take care of assigning the **OnSceneTrigger()** Unity Event.
+This event can also be used to add any extended functionality you might need.
