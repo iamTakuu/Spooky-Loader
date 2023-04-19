@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5846596004110512664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.62, y: 70.47, z: -89.176}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58,6 +58,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbff9cb301466a44e8324f6a312ef05a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnSceneTrigger:
+  onSceneTrigger:
     m_PersistentCalls:
       m_Calls: []
