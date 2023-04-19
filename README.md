@@ -14,6 +14,7 @@ Before using this tool, keep in mind that it is for a specific use in which you 
 <p>This tool is greatly inspired by <a href="http://www.unity-glue.com/html/#h.cwcpg3nzg7bx">The Unity Glue</a> and this 
 <a href="https://youtu.be/KRmqy22z0SM">2017 GDD Talk on Multi-Scene Editing</a>. Along side these two I took the implementation that Unity shows on their Youtube channel and attempted to improve on it where possible, while also adding some nice quality of life features for designers. I would highly recomend watching <a href="https://youtu.be/zObWVOv1GlE">their video</a> to gain a basic understanding of how Spooky Loader works.
 
+Here's a tutorial for the tool if you don't feel like reading the rest: <a href="https://youtu.be/R405d6sSTP4">Spooky Loader Tutorial</a>
 </p>
 
 ## Installation
