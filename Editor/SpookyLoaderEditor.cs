@@ -1,23 +1,50 @@
-using Spooky_Loader;
+using IAmTaku.SpookyLoader.Triggers;
 using UnityEditor;
+using UnityEditor.Events;
 using UnityEngine;
 
+namespace IAmTaku.SpookyLoader.Editors
+{
     [CustomEditor(typeof(SpookySceneLoader))]
     public class SpookyLoaderEditor : Editor
     {
-        private GameObject _sceneTrigger;
+        #region FIELDS
+
+        private SpookySceneLoader _spookySceneLoader;
+
+        #endregion
+
+        #region UNITY METHODS
+
+        private void OnEnable()
+        {
+            _spookySceneLoader = target as SpookySceneLoader;
+        }
+
         public override void OnInspectorGUI()
         {
-            var sceneLoader = target as SpookySceneLoader;
-            sceneLoader.isLoaded = EditorGUILayout.Toggle("Is Loaded", sceneLoader.isLoaded);
-            sceneLoader._triggerPrefab = EditorGUILayout.ObjectField("Trigger Prefab"
-                , sceneLoader._triggerPrefab
-                , typeof(GameObject), false) as GameObject;
-            
             if (GUILayout.Button("Add Trigger"))
             {
-                sceneLoader.CreateTrigger();
+                CreateTrigger();
             }
+            DrawDefaultInspector();
         }
-    }
 
+        #endregion
+
+        #region METHODS
+
+        private void CreateTrigger()
+        {
+            Transform spookyTransform = _spookySceneLoader.transform;
+            SpookyTrigger spookyTrigger = Instantiate(_spookySceneLoader.spookyTriggerPrefab,
+                                                      spookyTransform.position,
+                                                      spookyTransform.rotation,
+                                                      spookyTransform);
+            spookyTrigger.name = "SpookyTrigger";
+            UnityEventTools.AddPersistentListener(spookyTrigger.onSceneTrigger, _spookySceneLoader.OnSceneTrigger);
+        }
+
+        #endregion
+    }
+}
