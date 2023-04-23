@@ -1,6 +1,6 @@
 {
   "name": "com.iamtakuu.spookyloader",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "Spooky Loader",
   "description": "A simple asynchronous scene loader for multi-scene workflows.",
   "unity": "2019.1",
