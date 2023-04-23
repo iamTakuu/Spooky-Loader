@@ -1,8 +1,8 @@
-using IAmTaku.SpookyLoader.Triggers;
+using IAmTakuu.SpookyLoader.Triggers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace IAmTaku.SpookyLoader
+namespace IAmTakuu.SpookyLoader
 {
     public class SpookySceneLoader : MonoBehaviour
     {

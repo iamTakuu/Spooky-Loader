@@ -1,9 +1,9 @@
-using IAmTaku.SpookyLoader.Triggers;
+using IAmTakuu.SpookyLoader.Triggers;
 using UnityEditor;
 using UnityEditor.Events;
 using UnityEngine;
 
-namespace IAmTaku.SpookyLoader.Editors
+namespace IAmTakuu.SpookyLoader.Editors
 {
     [CustomEditor(typeof(SpookySceneLoader))]
     public class SpookyLoaderEditor : Editor
@@ -23,11 +23,11 @@ namespace IAmTaku.SpookyLoader.Editors
 
         public override void OnInspectorGUI()
         {
+            DrawDefaultInspector();
             if (GUILayout.Button("Add Trigger"))
             {
                 CreateTrigger();
             }
-            DrawDefaultInspector();
         }
 
         #endregion

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace IAmTaku.SpookyLoader.Triggers
+namespace IAmTakuu.SpookyLoader.Triggers
 {
     /// <summary>
     /// This is a simple trigger that will invoke an event when the player enters the trigger.
